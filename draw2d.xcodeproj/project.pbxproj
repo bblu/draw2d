@@ -12,7 +12,7 @@
 		81574937217EC8430011DC30 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 81574935217EC8430011DC30 /* Main.storyboard */; };
 		81574939217EC8430011DC30 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 81574938217EC8430011DC30 /* Assets.xcassets */; };
 		8157493C217EC8430011DC30 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8157493A217EC8430011DC30 /* LaunchScreen.storyboard */; };
-		81574944217EC9140011DC30 /* Draw2d.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81574943217EC9140011DC30 /* Draw2d.swift */; };
+		81574944217EC9140011DC30 /* DrawView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81574943217EC9140011DC30 /* DrawView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -23,7 +23,7 @@
 		81574938217EC8430011DC30 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8157493B217EC8430011DC30 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		8157493D217EC8430011DC30 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		81574943217EC9140011DC30 /* Draw2d.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Draw2d.swift; sourceTree = "<group>"; };
+		81574943217EC9140011DC30 /* DrawView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrawView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,7 +62,7 @@
 				81574938217EC8430011DC30 /* Assets.xcassets */,
 				8157493A217EC8430011DC30 /* LaunchScreen.storyboard */,
 				8157493D217EC8430011DC30 /* Info.plist */,
-				81574943217EC9140011DC30 /* Draw2d.swift */,
+				81574943217EC9140011DC30 /* DrawView.swift */,
 			);
 			path = draw2d;
 			sourceTree = "<group>";
@@ -141,7 +141,7 @@
 			files = (
 				81574934217EC8430011DC30 /* ViewController.swift in Sources */,
 				81574932217EC8430011DC30 /* AppDelegate.swift in Sources */,
-				81574944217EC9140011DC30 /* Draw2d.swift in Sources */,
+				81574944217EC9140011DC30 /* DrawView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -279,7 +279,9 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = V3R5N5T335;
 				INFOPLIST_FILE = draw2d/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = zw.draw2d;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -293,7 +295,9 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = V3R5N5T335;
 				INFOPLIST_FILE = draw2d/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = zw.draw2d;
 				PRODUCT_NAME = "$(TARGET_NAME)";
