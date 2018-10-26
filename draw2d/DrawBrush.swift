@@ -48,3 +48,50 @@ class PencilBrush: BaseBrush {
         return true
     }
 }
+class LineBrush: BaseBrush {
+    
+    override func drawInContext(context: CGContext) {
+        context.move(to: beginPoint)
+        context.addLine(to: endPoint)
+    }
+}
+
+class DashLineBrush: BaseBrush {
+    
+    override func drawInContext(context: CGContext) {
+        let lengths: [CGFloat] = [self.strokeWidth * 3, self.strokeWidth * 3]
+        context.setLineDash(phase: 2, lengths: lengths)
+        //CGContextSetLineDash(context, 0, lengths, 2)
+        
+        //CGContextMoveToPoint(context, beginPoint.x, beginPoint.y)
+        //CGContextAddLineToPoint(context, endPoint.x, endPoint.y)
+        context.move(to: beginPoint)
+        context.addLine(to: endPoint)
+    }
+}
+
+class RectangleBrush: BaseBrush {
+    
+    override func drawInContext(context: CGContext) {
+        context.addRect(CGRect(origin: CGPoint(x: min(beginPoint.x, endPoint.x), y: min(beginPoint.y, endPoint.y)),
+                               size: CGSize(width: abs(endPoint.x - beginPoint.x), height: abs(endPoint.y - beginPoint.y))))
+    }
+}
+
+class EllipseBrush: BaseBrush {
+    
+    override func drawInContext(context: CGContext) {
+        context.addEllipse(in:CGRect(origin: CGPoint(x: min(beginPoint.x, endPoint.x), y: min(beginPoint.y, endPoint.y)),
+                                     size: CGSize(width: abs(endPoint.x - beginPoint.x), height: abs(endPoint.y - beginPoint.y))))
+    }
+}
+
+class EraserBrush: PencilBrush {
+    
+    override func drawInContext(context: CGContext) {
+        context.setBlendMode(CGBlendMode.clear)
+        
+        super.drawInContext(context: context)
+    }
+}
+
