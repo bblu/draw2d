@@ -13,6 +13,7 @@
 		81574939217EC8430011DC30 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 81574938217EC8430011DC30 /* Assets.xcassets */; };
 		8157493C217EC8430011DC30 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8157493A217EC8430011DC30 /* LaunchScreen.storyboard */; };
 		81574944217EC9140011DC30 /* DrawView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81574943217EC9140011DC30 /* DrawView.swift */; };
+		81A63454218312AC00FC6CC5 /* DrawBrush.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81A63453218312AC00FC6CC5 /* DrawBrush.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		8157493B217EC8430011DC30 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		8157493D217EC8430011DC30 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		81574943217EC9140011DC30 /* DrawView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrawView.swift; sourceTree = "<group>"; };
+		81A63453218312AC00FC6CC5 /* DrawBrush.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrawBrush.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +65,7 @@
 				8157493A217EC8430011DC30 /* LaunchScreen.storyboard */,
 				8157493D217EC8430011DC30 /* Info.plist */,
 				81574943217EC9140011DC30 /* DrawView.swift */,
+				81A63453218312AC00FC6CC5 /* DrawBrush.swift */,
 			);
 			path = draw2d;
 			sourceTree = "<group>";
@@ -140,6 +143,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				81574934217EC8430011DC30 /* ViewController.swift in Sources */,
+				81A63454218312AC00FC6CC5 /* DrawBrush.swift in Sources */,
 				81574932217EC8430011DC30 /* AppDelegate.swift in Sources */,
 				81574944217EC9140011DC30 /* DrawView.swift in Sources */,
 			);

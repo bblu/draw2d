@@ -3,10 +3,14 @@
 //  draw2d
 //
 //  Created by bblu on 2018/10/23.
-//  Copyright © 2018年 zw. All rights reserved.
+//  Copyright © 2018年 cn. All rights reserved.
 //
 
 import UIKit
+
+enum DrawingState {
+    case Began, Moved, Ended
+}
 
 class DrawView: UIView {
 
@@ -54,11 +58,22 @@ class DrawView: UIView {
         self.addGestureRecognizer(panGestureRecognizer)
         
     }
+    var brush: BaseBrush?
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
         
         if let touch = touches.first{
             let curPoint = touch.location(in: self)
             lblLog.text = "curPoint:\(curPoint.x),\(curPoint.y)"
+        }
+        if let brush = self.brush {
+            brush.lastPoint = nil
+            
+            brush.beginPoint = touches.first!.location(in: self)
+            brush.endPoint = brush.beginPoint
+            
+            self.drawingState = .Began
+            
+            self.drawingImage()
         }
 
     }
