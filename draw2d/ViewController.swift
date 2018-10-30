@@ -2,7 +2,7 @@
 //  ViewController.swift
 //  draw2d
 //
-//  Created by zoomway on 2018/10/23.
+//  Created by bblu on 2018/10/23.
 //  Copyright © 2018年 zw. All rights reserved.
 //
 

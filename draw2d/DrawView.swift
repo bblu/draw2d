@@ -8,10 +8,6 @@
 
 import UIKit
 
-enum DrawingState {
-    case Began, Moved, Ended
-}
-
 class DrawView: UIView {
 
     @IBOutlet weak var lblLog: UILabel!
@@ -65,17 +61,6 @@ class DrawView: UIView {
             let curPoint = touch.location(in: self)
             lblLog.text = "curPoint:\(curPoint.x),\(curPoint.y)"
         }
-        if let brush = self.brush {
-            brush.lastPoint = nil
-            
-            brush.beginPoint = touches.first!.location(in: self)
-            brush.endPoint = brush.beginPoint
-            
-            self.drawingState = .Began
-            
-            self.drawingImage()
-        }
-
     }
     
     override func draw(_ rect:CGRect){

@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8145E86B2187F62A004B0538 /* ImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8145E86A2187F62A004B0538 /* ImageView.swift */; };
 		81574932217EC8430011DC30 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81574931217EC8430011DC30 /* AppDelegate.swift */; };
 		81574934217EC8430011DC30 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81574933217EC8430011DC30 /* ViewController.swift */; };
 		81574937217EC8430011DC30 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 81574935217EC8430011DC30 /* Main.storyboard */; };
@@ -17,6 +18,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		8145E86A2187F62A004B0538 /* ImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageView.swift; sourceTree = "<group>"; };
 		8157492E217EC8430011DC30 /* draw2d.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = draw2d.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		81574931217EC8430011DC30 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		81574933217EC8430011DC30 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -66,6 +68,7 @@
 				8157493D217EC8430011DC30 /* Info.plist */,
 				81574943217EC9140011DC30 /* DrawView.swift */,
 				81A63453218312AC00FC6CC5 /* DrawBrush.swift */,
+				8145E86A2187F62A004B0538 /* ImageView.swift */,
 			);
 			path = draw2d;
 			sourceTree = "<group>";
@@ -142,6 +145,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8145E86B2187F62A004B0538 /* ImageView.swift in Sources */,
 				81574934217EC8430011DC30 /* ViewController.swift in Sources */,
 				81A63454218312AC00FC6CC5 /* DrawBrush.swift in Sources */,
 				81574932217EC8430011DC30 /* AppDelegate.swift in Sources */,
